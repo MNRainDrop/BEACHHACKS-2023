@@ -55,16 +55,16 @@ class Card {
 class Deck {
     constructor() {
         this.array = [];
-        topCard = 0;
+        //topCard = 0;
     }
 
     refresh() {
-        rankArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A];
-        suitArray = ['♠', '♣', '♦', '♥'];
+        const rankArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
+        const suitArray = ['♠', '♣', '♦', '♥'];
 
-        suitIndex = 0
+        let suitIndex = 0
 
-        for (i = 0; i < 52; i ++) {
+        for (let i = 0; i < 52; i ++) {
 
             if (i < 13 ){
                 suitIndex = 0;
@@ -80,12 +80,12 @@ class Deck {
             else if (i >= 39) {
                 suitIndex = 3;
             }
-            array = Card(rankArray[i% 13], suit[suitIndex]);
+            this.array = new Card(rankArray[i% 13], suitArray[suitIndex]);
         }
     }
 
     shuffle(){
-        for (i = 0; i < 100000; i++){
+        for (let i = 0; i < 100000; i++){
             x = Math.random() % 52;
             y = Math.random() % 52;
             temp = array[x];
@@ -95,8 +95,8 @@ class Deck {
     }
 
     deckDisplay() {
-        for (i = 1; i < 53; i++) {
-            array[i - 1].cardDisplay();
+        for (let i = 1; i < 53; i++) {
+            this.array[i - 1].cardDisplay();
             console.log(" ");
             if (i % 13 == 0) {
                 console.log("\n");
