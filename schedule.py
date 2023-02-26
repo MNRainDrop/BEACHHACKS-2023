@@ -14,6 +14,7 @@ def selectTask():
 #tasks are categorized into classes, homework/projects, hobbies
 #param: due date: str, start time, end time, category:
 #output: 
+#hi
 def addTask():
     userTask = string(input("Please enter your task name. "))
     print("Task are categorized into class, homework, hobby, chore, work.")
