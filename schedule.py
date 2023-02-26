@@ -3,30 +3,34 @@ def sleepNeeded():
     sleepInput = int(input("Please enter amount of sleep, you would need."))
     sleep = 24 - sleepInput
     return sleep
+
 def sleepNeeded(input: int):
+    pause
 
 #view task
 def selectTask():
-    print("due date:"+due+"start time"+start+"end time"+end+"category")
+    print("due date:", due, "start time", start, "end time", end, "category")
 
 
 #add tasks to the schedule
 #tasks are categorized into classes, homework/projects, hobbies
 #param: due date: str, start time, end time, category:
 #output: 
-#hi
 def addTask():
     userTask = string(input("Please enter your task name. "))
     print("Task are categorized into class, homework, hobby, chore, work.")
     category = string(input("Please input the category it would go under. "))
-    while (category != "class") or (category != "homework") or (category != "hobby") or (category != "chore") or (category != "work")
-    if category == "class":
-        days = string(input("Please enter the days when your class will take place. "))
-        startTimes = int(input("Please enter the start time of your class. "))
-        endTime = int(input("Please enter the end time of your class. "))
-        
+    while (category != "class") or (category != "homework") or (category != "hobby") or (category != "chore") or (category != "work"):
+        print("Invalid Input, please enter again one of these categories: class, homework, hobby, chore, work")
+        category = string(input("Please input the category it would go under. "))
+        if category == "class":
+            day = string(input("Please enter the day when your class will take place. "))
+            startTime = int(input("Please enter the start time of your class. "))
+            endTime = int(input("Please enter the end time of your class. "))
+            date = string(input("Please enter a date for when you will start the task. "))
+            taskDict = {"Task": userTask, "Category": category, "Day": day, "startTime": startTime, "endTime": endTime, "Date": date}
+            break
 
-    taskDate = string(input("Please enter a date for when you will start the task. "))
 
 #user enters true false
 #be able to delete tasks
@@ -40,11 +44,5 @@ def deleteTask():
 def editTask():
 
 def scheduleTask():
+    pause
 
-
-
-
-
-
-
-def editTask():
