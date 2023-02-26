@@ -1,17 +1,18 @@
-
 #user inputs time they want to sleep
 def sleepNeeded():
     sleepInput = int(input("Please enter amount of sleep, you would need."))
     sleep = 24 - sleepInput
     return sleep
+def sleepNeeded(input: int):
 
 #view task
 def selectTask():
+    print("due date:"+due+"start time"+start+"end time"+end+"category")
 
 
 #add tasks to the schedule
 #tasks are categorized into classes, homework/projects, hobbies
-#param: 
+#param: due date: str, start time, end time, category:
 #output: 
 def addTask():
     userTask = string(input("Please enter your task name. "))
@@ -25,8 +26,13 @@ def addTask():
         
 
     taskDate = string(input("Please enter a date for when you will start the task. "))
+
+#user enters true false
 #be able to delete tasks
 def deleteTask():
+    print("would you like to delete task? Y/N")
+    complete = False
+    moved = False
 
 
 #edit tasks to be more versatile with time
@@ -40,3 +46,4 @@ def scheduleTask():
 
 
 
+def editTask():
