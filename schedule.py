@@ -1,9 +1,5 @@
-# #user inputs time they want to sleep
-# #output: time spent awake
-# def sleepNeeded():
-#     sleepInput = int(input("Please enter amount of sleep, you would need."))
-#     sleep = 24 - sleepInput
-#     return sleep
+import PySimpleGUI as psg
+from task import task
 
 #view task
 #output: String of all values
@@ -17,6 +13,7 @@ def selectTask():
 #tasks are categorized into classes, homework/projects, hobbies
 #output: returns dictionary of all values
 def addTask():
+    
     category = str(input("Please input the category it would go under. "))
     print("Task are categorized into class, homework, hobby, chore, work.")
     while (category != "class") and (category != "homework") and (category != "hobby") and (category != "chore") and (category != "work"):
