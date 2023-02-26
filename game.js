@@ -3,6 +3,10 @@ var canvasHeight = 400;
 
 function startGame() {
     gameCanvas.start();
+    let deckList = [];
+    for (let i = 1; i <= 13; i++) {
+        deckList.push("")
+    }
 }
 
 var gameCanvas = {
