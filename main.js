@@ -2,11 +2,10 @@ var canvasWidth = 600;
 var canvasHeight = 400;
 
 function startGame() {
+    // import {Card} from "./Card.js";
     gameCanvas.start();
-    let deckList = [];
-    for (let i = 1; i <= 13; i++) {
-        deckList.push("")
-    }
+    let card = new Card('S', 'A');
+    card.writeToConsole();
 }
 
 var gameCanvas = {
