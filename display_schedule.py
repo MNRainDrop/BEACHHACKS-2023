@@ -7,6 +7,7 @@ class display_schedule():
         self.x = screenWidth
         self.y = screenHeight
         self.font = p.font.Font('./assets/Roboto-Regular.ttf', 24)
+        
         # currentScreen shows the display
         # 0 for today
         # 1 for week

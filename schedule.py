@@ -59,4 +59,4 @@ def getValue(category):
 #     temp = addTask()
 #     for val in temp:
 
-selectTask()
+#selectTask()

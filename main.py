@@ -6,7 +6,7 @@ from Global import *
 def main():
     #initialize pygame
     p.init()
-    screen = p.display.set_mode((screenWidth, screenHeight), p.RESIZABLE)
+    screen = p.display.set_mode((0, 0), p.FULLSCREEN)
     sched = ds()
 
     clock = p.time.Clock()
