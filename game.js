@@ -3,7 +3,6 @@ var canvasHeight = 400;
 
 function startGame() {
     gameCanvas.start();
-
 }
 
 var gameCanvas = {
