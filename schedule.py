@@ -1,4 +1,3 @@
-
 #user inputs time they want to sleep
 def sleepNeeded(input: int):
 
@@ -13,7 +12,6 @@ def selectTask():
 #output: 
 def addTask():
 
-
 #user enters true false
 #be able to delete tasks
 def deleteTask():
@@ -21,14 +19,5 @@ def deleteTask():
     complete = False
     moved = False
 
-
-
-
 #edit tasks to be more versatile with time
 def editTask():
-
-
-
-
-
-
