@@ -3,9 +3,8 @@ def sleepNeeded():
     sleepInput = int(input("Please enter amount of sleep, you would need."))
     sleep = 24 - sleepInput
     return sleep
-
-#def sleepNeeded(input: int):
-    #pause
+def sleepNeeded(input: int):
+    pass
 
 #view task
 #def selectTask():
@@ -54,5 +53,4 @@ def deleteTask():
 
 #def scheduleTask():
 #addTask()
-hours = sleepNeeded()
-print(hours)
+
