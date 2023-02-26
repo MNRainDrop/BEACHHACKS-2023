@@ -52,7 +52,7 @@ class Card {
             console.log(`${rank}♥`);
         }
     }
-}
+};
 
 class Deck {
     constructor() {
@@ -85,4 +85,4 @@ class Deck {
         }
     }
 
-}
+};

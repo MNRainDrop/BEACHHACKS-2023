@@ -2,7 +2,6 @@ var canvasWidth = 600;
 var canvasHeight = 400;
 
 function startGame() {
-    // import {Card} from "./Card.js";
     gameCanvas.start();
     let card = new Card('S', 'A');
     card.writeToConsole();
