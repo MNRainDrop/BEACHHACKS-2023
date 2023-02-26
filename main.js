@@ -1,3 +1,5 @@
+import {Card} from "./Card.js";
+
 var canvasWidth = 600;
 var canvasHeight = 400;
 
