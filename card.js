@@ -5,8 +5,6 @@ class Card {
         this.rank = rank;
     }
 
-
-
     getValue() {
         switch(new rank){
             case 2:
@@ -52,14 +50,15 @@ class Card {
             console.log(`${rank}♥`);
         }
     }
-};
+}
 
 class Deck {
     constructor() {
         this.array = [];
+        topCard = 0;
     }
 
-    refreshDeck() {
+    refresh() {
         rankArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A];
         suitArray = ['♠', '♣', '♦', '♥'];
 
@@ -85,4 +84,45 @@ class Deck {
         }
     }
 
-};
+    shuffle(){
+        for (i = 0; i < 100000; i++){
+            x = Math.random() % 52;
+            y = Math.random() % 52;
+            temp = array[x];
+            items[x] = items[y];
+            items[y] = temp;
+        }
+    }
+
+    deckDisplay() {
+        for (i = 1; i < 53; i++) {
+            array[i - 1].cardDisplay();
+            console.log(" ");
+            if (i % 13 == 0) {
+                console.log("\n");
+            }
+        }
+    }
+
+    deal() {
+        dealing = array[topCard];
+        topCard ++;
+        return dealing
+    }
+
+    isEmpty(){
+        if (topCard >= 52) {
+            return true;
+        }
+        
+        else{
+            return false;
+        }
+    }
+
+}
+
+deck = new Deck;
+deck.refresh();
+deck.deckDisplay();
+
