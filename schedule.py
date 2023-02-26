@@ -53,4 +53,6 @@ def deleteTask():
 
 
 #def scheduleTask():
-addTask()
+#addTask()
+hours = sleepNeeded()
+print(hours)
