@@ -6,7 +6,7 @@ class display_schedule():
     def __init__(self) -> None:
         self.x = screenWidth
         self.y = screenHeight
-        self.font = p.font.Font('Roboto-Regular.ttf', 24)
+        self.font = p.font.Font('./assets/Roboto-Regular.ttf', 24)
         # currentScreen shows the display
         # 0 for today
         # 1 for week
@@ -55,7 +55,7 @@ class display_schedule():
         p.draw.rect(screen, p.Color("#121212"), rect)
 
     def drawCurrentScreen(self, screen):
-        font = p.font.Font('Roboto-Regular.ttf', 48)
+        font = p.font.Font('./assets/Roboto-Regular.ttf', 48)
         rect = p.Rect(350 * (self.x/screenWidth), 200 * (self.y/screenHeight), 300 * (self.x/screenWidth), 55* (self.y/screenHeight))
         text = font.render("" + self.times[self.currentScreen] + "'s Tasks", True, p.Color("#FFFFFF") )
         textRect = text.get_rect()
